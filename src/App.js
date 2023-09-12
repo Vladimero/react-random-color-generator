@@ -89,10 +89,10 @@ export default function App() {
       >
         <br />
         <br />
-        <label>Ask for hue: </label>
+        <h4>Ask for hue: </h4>
         <br />
         <br />
-        <input></input>
+        <input />
         <button
           style={{
             fontWeight: 'bold',
@@ -113,7 +113,7 @@ export default function App() {
       >
         <br />
         <br />
-        <label>Ask for lightness: </label>
+        <h4>Ask for lightness: </h4>
         <br />
         <br />
         <select>
@@ -138,7 +138,7 @@ export default function App() {
           alignItems: 'center',
         }}
       >
-        <label>Extend the Colorbox!</label>
+        <h4>Extend the Colorbox!</h4>
         <br />
         <br />
         <button
@@ -160,7 +160,7 @@ export default function App() {
           alignItems: 'center',
         }}
       >
-        <label> Shrink the Colorbox!</label>
+        <h4> Shrink the Colorbox!</h4>
         <br />
         <br />
         <button
