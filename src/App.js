@@ -34,7 +34,7 @@ export default function App() {
           alignItems: 'center',
         }}
       >
-        <h3>Generated Color:</h3>
+        Generated Color:
         <br />
         <br />
         <output
