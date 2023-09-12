@@ -3,7 +3,6 @@ import useGenerateRandomColor from './useGenerateRandomColor';
 
 export default function App() {
   const { color, generateColor } = useGenerateRandomColor();
-
   const [width, setWidth] = useState(60);
   const [height, setHeight] = useState(20);
   const submitSizeExtend = () => {
@@ -16,7 +15,7 @@ export default function App() {
   };
 
   return (
-    <>
+    <div>
       <h1
         style={{
           textAlign: 'center',
@@ -24,6 +23,7 @@ export default function App() {
       >
         Random Color Generator
       </h1>
+      <hr />
 
       <div
         style={{
@@ -92,7 +92,17 @@ export default function App() {
         <h4>Ask for hue: </h4>
         <br />
         <br />
-        <input />
+        <select>
+          <option>red</option>
+          <option>orange</option>
+          <option>yellow</option>
+          <option>blue</option>
+          <option>purple</option>
+          <option>pink</option>
+          <option>white</option>
+          <option>black</option>
+          <option>green</option>
+        </select>
         <button
           style={{
             fontWeight: 'bold',
@@ -138,7 +148,7 @@ export default function App() {
           alignItems: 'center',
         }}
       >
-        <h4>Extend the Colorbox!</h4>
+        <h4>Extend the Color Box!</h4>
         <br />
         <br />
         <button
@@ -147,7 +157,7 @@ export default function App() {
           }}
           onClick={submitSizeExtend}
         >
-          Submit
+          +
         </button>
       </div>
 
@@ -160,7 +170,7 @@ export default function App() {
           alignItems: 'center',
         }}
       >
-        <h4> Shrink the Colorbox!</h4>
+        <h4> Shrink the Color Box!</h4>
         <br />
         <br />
         <button
@@ -169,9 +179,9 @@ export default function App() {
           }}
           onClick={submitSizeShrink}
         >
-          Submit
+          -
         </button>
       </div>
-    </>
+    </div>
   );
 }

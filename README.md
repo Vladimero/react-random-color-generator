@@ -1,6 +1,6 @@
 # Random Color Generator
 
-... steps I did from scratch ...
+... First steps I did from scratch on my own ...
 
 - for randomize a color I used a function from these website: https://www.geeksforgeeks.org/how-to-generate-random-colors-by-using-react-hooks/
 - I created a component in a new js.file and pasted the function there
